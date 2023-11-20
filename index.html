@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="index.js"></script>
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+        (function(){
+        emailjs.init("xy4eLT1-LSIelGlIK");
+        })();
+    </script>
+</head>
+<body>
+    <!--<img src="https://cdn.vectorstock.com/i/1000x1000/37/53/school-letter-e-logo-icon-design-vector-22733753.webp" alt="School Letter E Logo Icon"> -->
+    <div class=".container.border.mt-3 bg-light">
+        <div class="row">
+            <div class="col-md-6 p-5 bg-primary text-white">
+                <h1>SECURITY SCHOOL</h1><br>
+                <h4> Hello There!</h4>
+                <h4> Welcome to Security School<br>Institute of FREE Learning </h4>
+                <br>
+                <h6>Register now and get up to 10 emails of free learning courses everyday.<br>Courses inculde: video lectures, pdf textbooks and offline assessments.</h6>
+                <br><br><i>Our Vision: Empower students to safely and confidently navigate a secure digital landscape, protected from emerging threats, and have them build a resilient and agile security ecosystem to protect against advanced and persistent cyber threats.</i>
+                <br><br><p><font size="2">Copyright © [2023] [E-Edu:CyberSec School]. All rights reserved.</font></p>
+
+            </div>
+            <div class="col-md-6 py-3">
+                <h1>Registration Form</h1>
+                <div class="form-group">
+                    <h5 for="name">Name</h5>
+                    <input
+                    type="text"
+                    class="form-control"
+                    id="name"
+                    placeholder="Enter your name"
+                    />
+                
+                </div>
+                <div class="form-group">
+                    <h5 for="email">Email</h5>
+                    <input
+                    type="email"
+                    class="form-control"
+                    id="email"
+                    placeholder="Enter your email"
+                    />
+            </div>
+            <div class="form-group">
+                <h5 for="message">Message</h5>
+                You can also inculde any inquiry, feedback, comment, question, suggestion, request, concern, compliment or any other report. Our team is committed to responding within 24 hours.
+                <textarea id="message" rows="3" class="form-control"></textarea>
+            </div>
+            <button class="btn-primary" onclick="validateEmail(email);sendMail()"> Submit</button>
+        </div> 
+</body>
+</html>
